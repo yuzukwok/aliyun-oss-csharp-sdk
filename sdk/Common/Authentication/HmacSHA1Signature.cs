@@ -29,7 +29,8 @@ namespace Aliyun.OSS.Common.Authentication
         {
             Debug.Assert(!string.IsNullOrEmpty(data));
 
-            using (var algorithm = KeyedHashAlgorithm.Create(SignatureMethod.ToUpperInvariant()))
+            //using (var algorithm = KeyedHashAlgorithm.Create(SignatureMethod.ToUpperInvariant()))
+            using (var algorithm=new HMACSHA1())
             {
                 algorithm.Key = Encoding.GetBytes(key.ToCharArray());
                 return Convert.ToBase64String(

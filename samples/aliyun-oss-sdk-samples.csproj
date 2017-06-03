@@ -143,11 +143,5 @@
       <Install>true</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\sdk\aliyun-oss-sdk.csproj">
-      <Project>{67BDC800-084C-4F84-8A80-661B5AFE499A}</Project>
-      <Name>aliyun-oss-sdk</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
 </Project>

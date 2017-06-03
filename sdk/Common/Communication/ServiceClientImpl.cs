@@ -379,8 +379,8 @@ namespace Aliyun.OSS.Common.Communication
                 // Specify the internal method name for adding headers
                 // mono: AddWithoutValidate
                 // win: AddInternal
-                var internalMethodName = (_isMonoPlatform == true) ? "AddWithoutValidate" : "AddInternal";
-
+                //var internalMethodName = (_isMonoPlatform == true) ? "AddWithoutValidate" : "AddInternal";
+                var internalMethodName = "AddWithoutValidate";
                 var mi = typeof(WebHeaderCollection).GetMethod(
                     internalMethodName,
                     BindingFlags.NonPublic | BindingFlags.Instance,
